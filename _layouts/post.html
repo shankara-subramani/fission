@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {{ content }}
+</article>
+
+<div class="pagination">
+  <div id="post-nav">
+  {% if page.previous.url %}
+    <a class="pagination-item older" href="{{page.previous.url}}">&laquo; Previous</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="pagination-item newer" href="{{page.next.url}}">Next &raquo;</a>
+  {% endif %}
+  </div>
+</div>

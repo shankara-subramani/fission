@@ -1,0 +1,62 @@
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+@media (max-width: $large-breakpoint) {
+  .post-preview {
+    & .post-title {
+      display: block;
+      float: none;
+    }
+    & .post-time {
+      margin-top: .75em;
+      display: block;
+      float: none;
+    }
+  }
+}
+.post-preview {
+  display: block;
+  width: 100%;
+  margin: 1.5em 0;
+  & .post-time {
+    color: #D4D4D4;
+  }
+}
+.page,
+.post {
+  margin-bottom: 4em;
+
+  li + li {
+    margin-top: .25rem;
+  }
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Meta data line below post title
+.post-date {
+  float: right;
+  color: #9a9a9a;
+}
+
+.post-list {
+  & .container {
+    padding: 0rem;
+  }
+}
+img.emoji {
+  display: inline-block;
+  margin: 0rem;
+  border-radius: 0px;
+}

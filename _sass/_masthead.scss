@@ -1,0 +1,58 @@
+// Masthead
+//
+// Super small header above the content for site name and short description.
+
+.masthead {
+  margin-bottom: 3rem;
+}
+
+.masthead-title {
+  display: inline-block;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+  color: $gray-4;
+
+  a {
+    color: inherit;
+  }
+
+  small {
+    font-size: 75%;
+    font-weight: 400;
+    opacity: .5;
+  }
+}
+
+.pages-link {
+  display: inline-block;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  & ul {
+    list-style: none;
+  }
+  & li {
+    display: inline-block;
+    & a {
+      color: inherit;
+      &:hover {
+        @include underline;
+      }
+    }
+    &::after {
+      content: "/";
+      margin: 0 0.5rem;
+      border: 0px;
+    }
+    &:last-child {
+      &::after {
+        content: " ";
+        border: 0px;
+      }
+    }
+  }
+
+
+}

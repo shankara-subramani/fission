@@ -1,0 +1,36 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Fission
+tagline:             An ultra-lite Jekyll theme
+url:                 http://shankariyerr.github.io/fission/
+baseurl:             ""
+github:              https://github.com/shankariyerr
+twitter:             https://twitter.com/i_shankar
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Shankar
+  url:               https://twitter.com/i_shankar
+
+
+# Gems
+gems:
+  - jemoji
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-sitemap
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+gist:
+  noscript: false

@@ -1,0 +1,30 @@
+
+  .f-left {
+    float: left;
+  }
+  .f-right {
+    float: right;
+  }
+  .t-left {
+    text-align: left;
+  }
+  .t-right {
+    text-align: right;
+  }
+  .t-center {
+    text-align: center;
+  }
+  .underline {
+    border-bottom: 2px solid #E1E1E1;
+
+    &:hover {
+    color: inherit;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    border-bottom: 2px solid #ff0f00;
+    }
+  }
+
+@mixin underline {
+  border-bottom: 2px solid #E1E1E1;
+}

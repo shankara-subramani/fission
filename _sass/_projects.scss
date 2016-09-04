@@ -1,0 +1,15 @@
+.projects {
+  margin-bottom: 4em;
+  & ul {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    & li {
+      margin: 1em 0em;
+    }
+  }
+}
